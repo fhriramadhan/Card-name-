@@ -1,277 +1,401 @@
-Eclipse Public License - v 2.0
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Fahri Ramadhan | Portfolio</title>
 
-    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
-    PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION
-    OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-1. DEFINITIONS
+<style>
 
-"Contribution" means:
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-  a) in the case of the initial Contributor, the initial content
-     Distributed under this Agreement, and
+body{
+background:#08111f;
+color:#fff;
+}
 
-  b) in the case of each subsequent Contributor:
-     i) changes to the Program, and
-     ii) additions to the Program;
-  where such changes and/or additions to the Program originate from
-  and are Distributed by that particular Contributor. A Contribution
-  "originates" from a Contributor if it was added to the Program by
-  such Contributor itself or anyone acting on such Contributor's behalf.
-  Contributions do not include changes or additions to the Program that
-  are not Modified Works.
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(8,17,31,.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
 
-"Contributor" means any person or entity that Distributes the Program.
+.logo{
+font-size:30px;
+font-weight:700;
+color:#00c3ff;
+}
 
-"Licensed Patents" mean patent claims licensable by a Contributor which
-are necessarily infringed by the use or sale of its Contribution alone
-or when combined with the Program.
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:.3s;
+}
 
-"Program" means the Contributions Distributed in accordance with this
-Agreement.
+nav a:hover{
+color:#00c3ff;
+}
 
-"Recipient" means anyone who receives the Program under this Agreement
-or any Secondary License (as applicable), including Contributors.
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#08111f,#13294f);
+}
 
-"Derivative Works" shall mean any work, whether in Source Code or other
-form, that is based on (or derived from) the Program and for which the
-editorial revisions, annotations, elaborations, or other modifications
-represent, as a whole, an original work of authorship.
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
 
-"Modified Works" shall mean any work in Source Code or other form that
-results from an addition to, deletion from, or modification of the
-contents of the Program, including, for purposes of clarity any new file
-in Source Code form that contains any contents of the Program. Modified
-Works shall not include works that contain only declarations,
-interfaces, types, classes, structures, or files of the Program solely
-in each case in order to link to, bind by name, or subclass the Program
-or Modified Works thereof.
+.hero span{
+color:#00c3ff;
+}
 
-"Distribute" means the acts of a) distributing or b) making available
-in any manner that enables the transfer of a copy.
+.hero p{
+max-width:700px;
+margin:auto;
+color:#ddd;
+line-height:1.8;
+}
 
-"Source Code" means the form of a Program preferred for making
-modifications, including but not limited to software source code,
-documentation source, and configuration files.
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#00c3ff;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+}
 
-"Secondary License" means either the GNU General Public License,
-Version 2.0, or any later versions of that license, including any
-exceptions or additional permissions as identified by the initial
-Contributor.
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #00c3ff;
+}
 
-2. GRANT OF RIGHTS
+section{
+padding:100px 10%;
+}
 
-  a) Subject to the terms of this Agreement, each Contributor hereby
-  grants Recipient a non-exclusive, worldwide, royalty-free copyright
-  license to reproduce, prepare Derivative Works of, publicly display,
-  publicly perform, Distribute and sublicense the Contribution of such
-  Contributor, if any, and such Derivative Works.
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#00c3ff;
+}
 
-  b) Subject to the terms of this Agreement, each Contributor hereby
-  grants Recipient a non-exclusive, worldwide, royalty-free patent
-  license under Licensed Patents to make, use, sell, offer to sell,
-  import and otherwise transfer the Contribution of such Contributor,
-  if any, in Source Code or other form. This patent license shall
-  apply to the combination of the Contribution and the Program if, at
-  the time the Contribution is added by the Contributor, such addition
-  of the Contribution causes such combination to be covered by the
-  Licensed Patents. The patent license shall not apply to any other
-  combinations which include the Contribution. No hardware per se is
-  licensed hereunder.
+.about{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:50px;
+align-items:center;
+}
 
-  c) Recipient understands that although each Contributor grants the
-  licenses to its Contributions set forth herein, no assurances are
-  provided by any Contributor that the Program does not infringe the
-  patent or other intellectual property rights of any other entity.
-  Each Contributor disclaims any liability to Recipient for claims
-  brought by any other entity based on infringement of intellectual
-  property rights or otherwise. As a condition to exercising the
-  rights and licenses granted hereunder, each Recipient hereby
-  assumes sole responsibility to secure any other intellectual
-  property rights needed, if any. For example, if a third party
-  patent license is required to allow Recipient to Distribute the
-  Program, it is Recipient's responsibility to acquire that license
-  before distributing the Program.
+.profile{
+width:250px;
+height:250px;
+border-radius:50%;
+background:linear-gradient(45deg,#00c3ff,#005eff);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:90px;
+font-weight:bold;
+margin:auto;
+box-shadow:0 0 30px #00c3ff;
+}
 
-  d) Each Contributor represents that to its knowledge it has
-  sufficient copyright rights in its Contribution, if any, to grant
-  the copyright license set forth in this Agreement.
+.about p{
+line-height:2;
+color:#ddd;
+}
 
-  e) Notwithstanding the terms of any Secondary License, no
-  Contributor makes additional grants to any Recipient (other than
-  those set forth in this Agreement) as a result of such Recipient's
-  receipt of the Program under the terms of a Secondary License
-  (if permitted under the terms of Section 3).
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
 
-3. REQUIREMENTS
+.card{
+background:#101d35;
+padding:25px;
+border-radius:20px;
+transition:.4s;
+border:1px solid rgba(255,255,255,.05);
+}
 
-3.1 If a Contributor Distributes the Program in any form, then:
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(0,195,255,.3);
+}
 
-  a) the Program must also be made available as Source Code, in
-  accordance with section 3.2, and the Contributor must accompany
-  the Program with a statement that the Source Code for the Program
-  is available under this Agreement, and informs Recipients how to
-  obtain it in a reasonable manner on or through a medium customarily
-  used for software exchange; and
+.card h3{
+color:#00c3ff;
+margin-bottom:15px;
+}
 
-  b) the Contributor may Distribute the Program under a license
-  different than this Agreement, provided that such license:
-     i) effectively disclaims on behalf of all other Contributors all
-     warranties and conditions, express and implied, including
-     warranties or conditions of title and non-infringement, and
-     implied warranties or conditions of merchantability and fitness
-     for a particular purpose;
+.skill{
+margin-bottom:20px;
+}
 
-     ii) effectively excludes on behalf of all other Contributors all
-     liability for damages, including direct, indirect, special,
-     incidental and consequential damages, such as lost profits;
+.skill p{
+margin-bottom:8px;
+}
 
-     iii) does not attempt to limit or alter the recipients' rights
-     in the Source Code under section 3.2; and
+.bar{
+height:10px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+}
 
-     iv) requires any subsequent distribution of the Program by any
-     party to be under a license that satisfies the requirements
-     of this section 3.
+.fill{
+height:100%;
+background:#00c3ff;
+}
 
-3.2 When the Program is Distributed as Source Code:
+.contact{
+text-align:center;
+}
 
-  a) it must be made available under this Agreement, or if the
-  Program (i) is combined with other material in a separate file or
-  files made available under a Secondary License, and (ii) the initial
-  Contributor attached to the Source Code the notice described in
-  Exhibit A of this Agreement, then the Program may be made available
-  under the terms of such Secondary Licenses, and
+.contact a{
+display:inline-block;
+margin:15px;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+background:#13294f;
+transition:.3s;
+}
 
-  b) a copy of this Agreement must be included with each copy of
-  the Program.
+.contact a:hover{
+background:#00c3ff;
+color:#000;
+}
 
-3.3 Contributors may not remove or alter any copyright, patent,
-trademark, attribution notices, disclaimers of warranty, or limitations
-of liability ("notices") contained within the Program from any copy of
-the Program which they Distribute, provided that Contributors may add
-their own appropriate notices.
+footer{
+padding:40px;
+text-align:center;
+background:#050b16;
+color:#bbb;
+}
 
-4. COMMERCIAL DISTRIBUTION
+@media(max-width:768px){
 
-Commercial distributors of software may accept certain responsibilities
-with respect to end users, business partners and the like. While this
-license is intended to facilitate the commercial use of the Program,
-the Contributor who includes the Program in a commercial product
-offering should do so in a manner which does not create potential
-liability for other Contributors. Therefore, if a Contributor includes
-the Program in a commercial product offering, such Contributor
-("Commercial Contributor") hereby agrees to defend and indemnify every
-other Contributor ("Indemnified Contributor") against any losses,
-damages and costs (collectively "Losses") arising from claims, lawsuits
-and other legal actions brought by a third party against the Indemnified
-Contributor to the extent caused by the acts or omissions of such
-Commercial Contributor in connection with its distribution of the Program
-in a commercial product offering. The obligations in this section do not
-apply to any claims or Losses relating to any actual or alleged
-intellectual property infringement. In order to qualify, an Indemnified
-Contributor must: a) promptly notify the Commercial Contributor in
-writing of such claim, and b) allow the Commercial Contributor to control,
-and cooperate with the Commercial Contributor in, the defense and any
-related settlement negotiations. The Indemnified Contributor may
-participate in any such claim at its own expense.
+.hero h1{
+font-size:40px;
+}
 
-For example, a Contributor might include the Program in a commercial
-product offering, Product X. That Contributor is then a Commercial
-Contributor. If that Commercial Contributor then makes performance
-claims, or offers warranties related to Product X, those performance
-claims and warranties are such Commercial Contributor's responsibility
-alone. Under this section, the Commercial Contributor would have to
-defend claims against the other Contributors related to those performance
-claims and warranties, and if a court requires any other Contributor to
-pay any damages as a result, the Commercial Contributor must pay
-those damages.
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-5. NO WARRANTY
+nav{
+display:none;
+}
 
-EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
-PERMITTED BY APPLICABLE LAW, THE PROGRAM IS PROVIDED ON AN "AS IS"
-BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR
-IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF
-TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR
-PURPOSE. Each Recipient is solely responsible for determining the
-appropriateness of using and distributing the Program and assumes all
-risks associated with its exercise of rights under this Agreement,
-including but not limited to the risks and costs of program errors,
-compliance with applicable laws, damage to or loss of data, programs
-or equipment, and unavailability or interruption of operations.
+}
 
-6. DISCLAIMER OF LIABILITY
+</style>
+</head>
 
-EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
-PERMITTED BY APPLICABLE LAW, NEITHER RECIPIENT NOR ANY CONTRIBUTORS
-SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST
-PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE
-EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGES.
+<body>
 
-7. GENERAL
+<header>
 
-If any provision of this Agreement is invalid or unenforceable under
-applicable law, it shall not affect the validity or enforceability of
-the remainder of the terms of this Agreement, and without further
-action by the parties hereto, such provision shall be reformed to the
-minimum extent necessary to make such provision valid and enforceable.
+<div class="logo">MFR</div>
 
-If Recipient institutes patent litigation against any entity
-(including a cross-claim or counterclaim in a lawsuit) alleging that the
-Program itself (excluding combinations of the Program with other software
-or hardware) infringes such Recipient's patent(s), then such Recipient's
-rights granted under Section 2(b) shall terminate as of the date such
-litigation is filed.
+<nav>
+<a href="#home">Home</a>
+<a href="#about">Tentang</a>
+<a href="#skill">Skill</a>
+<a href="#contact">Kontak</a>
+</nav>
 
-All Recipient's rights under this Agreement shall terminate if it
-fails to comply with any of the material terms or conditions of this
-Agreement and does not cure such failure in a reasonable period of
-time after becoming aware of such noncompliance. If all Recipient's
-rights under this Agreement terminate, Recipient agrees to cease use
-and distribution of the Program as soon as reasonably practicable.
-However, Recipient's obligations under this Agreement and any licenses
-granted by Recipient relating to the Program shall continue and survive.
+</header>
 
-Everyone is permitted to copy and distribute copies of this Agreement,
-but in order to avoid inconsistency the Agreement is copyrighted and
-may only be modified in the following manner. The Agreement Steward
-reserves the right to publish new versions (including revisions) of
-this Agreement from time to time. No one other than the Agreement
-Steward has the right to modify this Agreement. The Eclipse Foundation
-is the initial Agreement Steward. The Eclipse Foundation may assign the
-responsibility to serve as the Agreement Steward to a suitable separate
-entity. Each new version of the Agreement will be given a distinguishing
-version number. The Program (including Contributions) may always be
-Distributed subject to the version of the Agreement under which it was
-received. In addition, after a new version of the Agreement is published,
-Contributor may elect to Distribute the Program (including its
-Contributions) under the new version.
+<section class="hero" id="home">
 
-Except as expressly stated in Sections 2(a) and 2(b) above, Recipient
-receives no rights or licenses to the intellectual property of any
-Contributor under this Agreement, whether expressly, by implication,
-estoppel or otherwise. All rights in the Program not expressly granted
-under this Agreement are reserved. Nothing in this Agreement is intended
-to be enforceable by any entity that is not a Contributor or Recipient.
-No third-party beneficiary rights are created under this Agreement.
+<div>
 
-Exhibit A - Form of Secondary Licenses Notice
+<h1>Halo, Saya <span>M. Fahri Ramadhan</span></h1>
 
-"This Source Code may also be made available under the following
-Secondary Licenses when the conditions for such availability set forth
-in the Eclipse Public License, v. 2.0 are satisfied: {name license(s),
-version(s), and exceptions or additional permissions here}."
+<p id="typing"></p>
 
-  Simply including a copy of this Agreement, including this Exhibit A
-  is not sufficient to license the Source Code under Secondary Licenses.
+<a href="#about" class="btn">
+Tentang Saya
+</a>
 
-  If it is not possible or desirable to put the notice in a particular
-  file, then You may include the notice in a location (such as a LICENSE
-  file in a relevant directory) where a recipient would be likely to
-  look for such a notice.
+</div>
 
-  You may add additional accurate notices of copyright ownership.
+</section>
+
+<section id="about">
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="about">
+
+<div class="profile">
+F
+</div>
+
+<div>
+
+<p>
+
+Saya adalah <b>M. Fahri Ramadhan</b>, siswa kelas <b>XII</b> di <b>SMAN 7 Pekanbaru</b>. Saya memiliki minat besar dalam dunia teknologi, khususnya Web Development, UI/UX Design, Artificial Intelligence, Machine Learning, serta Desain Grafis.
+
+Saya senang mempelajari hal-hal baru dan terus mengembangkan kemampuan agar menjadi seorang Software Engineer profesional di masa depan.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skill">
+
+<h2 class="title">My Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+<p>Graphic Design</p>
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Profil Singkat</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎓 Pendidikan</h3>
+SMAN 7 Pekanbaru
+</div>
+
+<div class="card">
+<h3>📚 Status</h3>
+Siswa Kelas XII
+</div>
+
+<div class="card">
+<h3>💻 Fokus</h3>
+Web Development & AI
+</div>
+
+<div class="card">
+<h3>🚀 Target</h3>
+Software Engineer
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Hubungi Saya</h2>
+
+<div class="contact">
+
+<a href="mailto:fryxyl86@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+ fryxyl86@gmail.com
+</a>
+
+<a href="https://instagram.com/faxyl8" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+ @faxyl8
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>M. Fahri Ramadhan</h2>
+
+<p>
+© 2026 | Personal Portfolio Website
+</p>
+
+</footer>
+
+<script>
+
+const text="Student • Web Developer • UI/UX Enthusiast • Graphic Designer • Future Software Engineer";
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,45);
+
+}
+
+}
+
+typing();
+
+</script>
+
+</body>
+</html>
